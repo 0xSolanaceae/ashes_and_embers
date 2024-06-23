@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="GNU General Public License version 3 (GPLv3)"
+
+[[mods]]
+modId="ashesembers"
+version="1.0"
+displayName="Ashes & Embers"
+displayURL="https://solanaceae.xyz/"
+logoFile="logo.png"
+credits="solanaceae"
+authors="solanaceae"
+description="A super simple mod adding ash and embers drifting down from the sky, perfect for the post apocalypse!"
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.ashesembers]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
