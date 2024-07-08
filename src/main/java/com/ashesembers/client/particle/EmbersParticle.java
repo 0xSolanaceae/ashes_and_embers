@@ -1,4 +1,3 @@
-
 package com.ashesembers.client.particle;
 
 import net.minecraftforge.api.distmarker.OnlyIn;
