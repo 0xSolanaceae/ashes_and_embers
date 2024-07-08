@@ -38,20 +38,21 @@ public class ParticleEffectsProcedure {
 		if (world.getBiome(BlockPos.containing(x, y, z)).is(TagKey.create(Registries.BIOME, new ResourceLocation("minecraft:is_overworld")))) {
 			if (world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z))) {
 				if (!entity.isUnderWater()) {
-					AshesembersMod.queueServerWork(30, () -> {
+					AshesembersMod.queueServerWork(10, () -> {
 						if (Math.random() < 0.4) {
 							if (world instanceof ServerLevel _level)
-								_level.sendParticles((SimpleParticleType) (AshesembersModParticleTypes.ASHES.get()), x, y, z, 8, (Mth.nextInt(RandomSource.create(), 1, 10)), (Mth.nextInt(RandomSource.create(), 5, 10)),
-										(Mth.nextInt(RandomSource.create(), 1, 10)), 0.1);
+								_level.sendParticles((SimpleParticleType) (AshesembersModParticleTypes.ASHES.get()), x, y, z, 28, (Mth.nextInt(RandomSource.create(), 1, 20)), (Mth.nextInt(RandomSource.create(), 3, 15)),
+										(Mth.nextInt(RandomSource.create(), 1, 20)), 0.1);
 						}
 						if (Math.random() < 0.2) {
 							if (world instanceof ServerLevel _level)
-								_level.sendParticles((SimpleParticleType) (AshesembersModParticleTypes.EMBERS.get()), x, y, z, 2, (Mth.nextInt(RandomSource.create(), 1, 10)), (Mth.nextInt(RandomSource.create(), 7, 10)),
-										(Mth.nextInt(RandomSource.create(), 1, 10)), 0.1);
+								_level.sendParticles((SimpleParticleType) (AshesembersModParticleTypes.EMBERS.get()), x, y, z, 20, (Mth.nextInt(RandomSource.create(), 1, 20)), (Mth.nextInt(RandomSource.create(), 3, 15)),
+										(Mth.nextInt(RandomSource.create(), 1, 20)), 0.1);
 						}
 					});
 				}
 			}
 		}
 	}
+}
 }
