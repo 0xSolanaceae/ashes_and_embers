@@ -37,7 +37,7 @@ public class EmbersParticle extends TextureSheetParticle {
 		this.spriteSet = spriteSet;
 		this.setSize(0.2f, 0.2f);
 		this.quadSize *= 0.3f;
-		this.lifetime = (int) Math.max(1, 50 + (this.random.nextInt(40) - 20));
+		this.lifetime = (int) Math.max(1, 70 + (this.random.nextInt(100) - 50));
 		this.gravity = 0.1f;
 		this.hasPhysics = true;
 		this.xd = vx * 0;
