@@ -1,4 +1,3 @@
-
 package com.ashesembers.client.particle;
 
 import net.minecraftforge.api.distmarker.OnlyIn;
@@ -37,7 +36,7 @@ public class AshesParticle extends TextureSheetParticle {
 		this.spriteSet = spriteSet;
 		this.setSize(0.1f, 0.1f);
 		this.quadSize *= 0.5f;
-		this.lifetime = (int) Math.max(1, 60 + (this.random.nextInt(80) - 40));
+		this.lifetime = (int) Math.max(1, 100 + (this.random.nextInt(120) - 60));
 		this.gravity = 0.1f;
 		this.hasPhysics = true;
 		this.xd = vx * 0;
